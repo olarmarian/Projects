@@ -1,0 +1,13 @@
+section.lang {
+    margin: 0;
+    padding: 0;
+}
+
+section .lang ul {
+    list-style: none;
+}
+
+section .lang ul li {
+    float: unset;
+    color: brown;
+}
