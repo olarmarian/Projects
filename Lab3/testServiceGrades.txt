@@ -1,0 +1,5 @@
+Student: 01
+Tema: 1
+Nota: 7.0
+Predata in saptamana: 7
+Feedback: asd

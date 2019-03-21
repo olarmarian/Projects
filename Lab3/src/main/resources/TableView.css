@@ -1,0 +1,26 @@
+.table-view .filler, .tree-table-view .filler, .table-view .column-header, .tree-table-view .column-header {
+    -fx-size: 65;
+    -fx-border-style: null;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: #3a414c;
+}
+.table-view .show-hide-columns-button, .tree-table-view .show-hide-columns-button {
+    -fx-background-color: transparent;
+}
+.table-view .column-header .label, .table-view .filler .label, .table-view .column-drag-header .label, .tree-table-view .column-header .label, .tree-table-view .filler .label, .tree-table-view .column-drag-header .label {
+    -fx-alignment: CENTER_LEFT;
+    -fx-font-size: 16;
+    -fx-text-fill: #eeebeb;
+}
+.table-view .column-header-background, .tree-table-view .column-header-background {
+      -fx-background-color: transparent;
+  }
+.table-row-cell, .tree-table-row-cell {
+    -fx-cell-size: 50px;
+}
+.table-cell {
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+    -fx-padding: 10 0 0 10 ;
+
+}

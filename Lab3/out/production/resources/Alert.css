@@ -1,0 +1,22 @@
+.Alert {
+    -fx-background-color: #244c8c;
+    -fx-border-color: black;
+    -fx-border-width: 5;
+    -fx-border-radius: 10;
+}
+.Alert> *.button-bar > *.container{
+    -fx-background-color: #3a414c;
+}
+.Alert > *.label.content{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #eeebeb;
+}
+.Alert:header *.header-panel{
+    -fx-background-color: #3a414c;
+}
+.Alert:header *.header-panel *.label{
+    -fx-font-size: 18px;
+    -fx-font-style: italic;
+    -fx-text-fill: #eeebeb;
+}

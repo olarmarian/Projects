@@ -1,0 +1,4 @@
+Tema: 1
+Nota: 9.0
+Predata in saptamana: 7
+Feedback: e ok

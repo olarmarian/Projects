@@ -1,0 +1,28 @@
+Tema: 15#Cerinta15#14#14#14
+Nota: 10.0
+Predata in data: 2019-01-01
+Feedback: e ok
+Tema: 14#Cerinta14#14#13#13
+Nota: 10.0
+Predata in data: 2019-01-01
+Feedback: e ok
+Tema: 13#Cerinta13#13#11#12
+Nota: 7.5
+Predata in data: 2019-01-01
+Feedback: e ok
+Tema: 13#Cerinta13#13#11#12
+Nota: 7.5
+Predata in data: 2019-01-01
+Feedback: e ok
+Tema: 16#Cerinta16#14#13#13
+Nota: 10.0
+Predata in data: 2019-01-01
+Feedback: e ok	
+Tema: 13#Cerinta13#13#11#12
+Nota: 7.5
+Predata in data: 2019-01-01
+Feedback: e 
+Tema: 14#Cerinta14#14#13#13
+Nota: 7.5
+Predata in data: 2019-01-01
+Feedback: e ok

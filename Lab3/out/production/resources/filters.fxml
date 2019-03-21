@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1077.0" style="-fx-background-color: #244c8c; -fx-border-width: 1; -fx-border-style: solid;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Gui.FXMLFilterController">
+   <center>
+      <AnchorPane prefHeight="598.0" prefWidth="1039.0" style="-fx-background-color: #3a414c; -fx-border-width: 1; -fx-border-style: solid;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="nameFilterTxt" layoutX="258.0" layoutY="120.0" onInputMethodTextChanged="#handleFilter1" onKeyTyped="#handleFilter1" />
+            <TextField fx:id="homeworkFilterTxt" layoutX="258.0" layoutY="191.0" onKeyTyped="#handleFilter1" />
+            <Label layoutX="45.0" layoutY="256.0" text="Group :" textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxGroup" layoutX="258.0" layoutY="259.0" onAction="#handleFilter2" prefWidth="150.0" />
+            <Text fill="#f5f2f2" layoutX="45.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Requirement homework :" wrappingWidth="211.19873046875">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fill="#f5f2f2" layoutX="47.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name student :" wrappingWidth="206.19873046875">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Text>
+            <Label layoutX="47.0" layoutY="307.0" text="Id homework : " textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxHomework" layoutX="260.0" layoutY="310.0" onAction="#handleFilter2" prefWidth="150.0" />
+            <TableView fx:id="tableViewFilter" layoutX="538.0" layoutY="59.0" prefHeight="559.0" prefWidth="493.0">
+              <columns>
+                <TableColumn fx:id="nameStudentColumn" prefWidth="123.0" text="Name student" />
+                <TableColumn fx:id="reqHomeworkColumn" prefWidth="197.0" text="Requirement homework" />
+                  <TableColumn fx:id="valueGradeColumn" prefWidth="170.0" text="Value" />
+              </columns>
+            </TableView>
+            <DatePicker fx:id="datePickerFrom" layoutX="279.0" layoutY="406.0" />
+            <DatePicker fx:id="datePickerTo" layoutX="279.0" layoutY="462.0" />
+            <Label layoutX="47.0" layoutY="431.0" text="Grades between :" textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_filterDates" layoutX="317.0" layoutY="516.0" mnemonicParsing="false" onAction="#handleFilter3" prefHeight="25.0" prefWidth="99.0" text="Filter" />
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="930.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="32.0" layoutY="21.0" text="Filters" textFill="#f5f2f2" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="818.0" layoutY="21.0" text="Lab Application" textFill="#f5f2f2">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

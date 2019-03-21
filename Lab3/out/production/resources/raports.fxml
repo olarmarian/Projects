@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="690.0" style="-fx-background-color: #244c8c;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Gui.FXMLRaportController">
+   <center>
+      <AnchorPane prefHeight="509.0" prefWidth="599.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="pnl_raport3" layoutX="186.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3a414c; -fx-border-width: 1; -fx-border-style: solid;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#f5f4f4" fontSmoothingType="LCD" layoutX="88.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Studentii care pot intra in examen (media mai mare sau egala cu 4)." wrappingWidth="413.3486328125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_generateRaport3" layoutX="345.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate pdf" />
+                  <Label layoutX="245.0" layoutY="36.0" text="Raport 3" textFill="#eeebeb">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_showChart3" layoutX="124.0" layoutY="385.0" mnemonicParsing="false" onAction="#raport3Piechart" prefHeight="25.0" prefWidth="112.0" text="Show Chart" />
+                  <PieChart fx:id="raport3_piechart" layoutX="121.0" layoutY="164.0" prefHeight="215.0" prefWidth="335.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_raport4" layoutX="176.0" layoutY="78.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3a414c; -fx-border-style: solid; -fx-border-width: 1;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#f5f4f4" fontSmoothingType="LCD" layoutX="102.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Studentii care au predat la timp toate temele." wrappingWidth="413.3486328125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_generateRaport4" layoutX="344.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate pdf" />
+                  <Label layoutX="244.0" layoutY="33.0" text="Raport 4" textFill="#eeebeb">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_showChart4" layoutX="121.0" layoutY="403.0" mnemonicParsing="false" onAction="#raport4Piechart" prefHeight="25.0" prefWidth="114.0" text="Show Chart" />
+                  <PieChart fx:id="raport4_piechart" layoutX="78.0" layoutY="151.0" prefHeight="249.0" prefWidth="422.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_raport2" layoutX="186.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3a414c; -fx-border-width: 1; -fx-border-style: solid;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text fill="#f5f4f4" fontSmoothingType="LCD" layoutX="88.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cea mai grea tema: media notelor la tema respectiva este cea mai mica." wrappingWidth="413.3486328125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_generateRaport2" layoutX="345.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate pdf" />
+                  <Label layoutX="245.0" layoutY="24.0" text="Raport 2" textFill="#eeebeb">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_showChart2" layoutX="122.0" layoutY="410.0" mnemonicParsing="false" onAction="#raport2Piechart" prefHeight="25.0" prefWidth="114.0" text="Show Chart" />
+                  <PieChart fx:id="raport2_piechart" layoutX="58.0" layoutY="138.0" prefHeight="262.0" prefWidth="476.0" />
+               </children>
+            </Pane>
+            <Pane fx:id="pnl_raport1" layoutX="186.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-style: solid; -fx-border-width: 1; -fx-background-color: #3a414c;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="245.0" layoutY="14.0" text="Raport 1" textFill="#eeebeb">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#f2eeee" fontSmoothingType="LCD" layoutX="58.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota  la  laborator  pentru fiecare student ." wrappingWidth="473.1328125">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="22.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="btn_generateRaport1" layoutX="345.0" layoutY="408.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Generate pdf" />
+                  <PieChart fx:id="raport1_piechart" layoutX="143.0" layoutY="164.0" prefHeight="216.0" prefWidth="304.0" />
+                  <Button fx:id="btn_showChart1" layoutX="111.0" layoutY="408.0" mnemonicParsing="false" onAction="#raport1Piechart" prefHeight="25.0" prefWidth="114.0" text="Show Chart" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+      <VBox alignment="TOP_CENTER" depthTest="ENABLE" prefHeight="449.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-border-width: 1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_raport1" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #244c8c;" text="Raport 1" textAlignment="CENTER" textFill="#eeeded">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_raport2" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #244c8c;" text="Raport 2" textAlignment="CENTER" textFill="#eeeded">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_raport3" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #244c8c;" text="Raport 3" textAlignment="CENTER" textFill="#eeeded">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_raport4" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #244c8c;" text="Raport 4" textAlignment="CENTER" textFill="#eeeded">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </left>
+   <top>
+      <AnchorPane prefHeight="70.0" prefWidth="524.0" style="-fx-border-width: 1; -fx-border-style: solid;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="27.0" layoutY="20.0" text="Raports" textFill="#fff4f4" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="528.0" layoutY="24.0" text="Lab Application" textFill="#fff4f4" underline="true">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

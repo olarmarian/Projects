@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="jboss-common-jdbc-wrapper">
+    <CLASSES>
+      <root url="jar://E:/java_jar/mysql-connector-java-8.0.13/lib/jboss-common-jdbc-wrapper.jar!/" />
+      <root url="jar://E:/java_jar/mysql-connector-java-8.0.13/lib/protobuf-java-3.6.1.jar!/" />
+      <root url="jar://E:/java_jar/mysql-connector-java-8.0.13/lib/c3p0-0.9.1-pre6.jar!/" />
+      <root url="jar://E:/java_jar/mysql-connector-java-8.0.13/lib/slf4j-api-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/java_jar/mysql-connector-java-8.0.13/lib/jboss-common-jdbc-wrapper-src.jar!/" />
+    </SOURCES>
+  </library>
+</component>
