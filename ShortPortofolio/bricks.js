@@ -41,7 +41,7 @@ function setup() {
 
     /* ball attributes */
     ball = createVector(width / 2, height / 2);
-    ballVelocity = createVector(random(-1, 1), random(-1, 1));
+    ballVelocity = createVector(random(-0.25, 0.25), random(-1, 1));
     ballVelocity.setMag(INITIAL_BALL_SPEED);
 
     /* text */

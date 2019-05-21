@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+        />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="100dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_begin="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <!--kcals-->
+    <TextView
+        android:id="@+id/kcals_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kcals plan :"
+
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/proteins_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_kcals"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/value_kcals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8700"
+        android:textSize="17dp"
+
+        app:layout_constraintBottom_toTopOf="@id/value_proteins"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintStart_toEndOf="@id/kcals_lbl"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        tools:text="2345" />
+
+
+    <TextView
+        android:id="@+id/kcals_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kcals :"
+
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/proteins_for_today_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_kcals_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <TextView
+        android:id="@+id/value_kcals_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/kcals_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline"
+        app:layout_constraintBottom_toTopOf="@id/value_proteins_for_today"
+        android:text="0"
+        tools:text="2345" />
+
+
+
+    <!--proteins-->
+    <TextView
+        android:id="@+id/proteins_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteins plan :"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/lipids_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_proteins"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/kcals_lbl" />
+
+    <TextView
+        android:id="@+id/value_proteins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        tools:text="2345"
+        android:text="50 g"
+        app:layout_constraintStart_toEndOf="@id/proteins_lbl"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/value_kcals"
+        app:layout_constraintBottom_toTopOf="@id/value_lipids"
+        />
+
+
+    <TextView
+        android:id="@+id/proteins_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proteins :"
+        android:textSize="17dp"
+
+        app:layout_constraintBottom_toTopOf="@id/lipids_for_today_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_proteins_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/kcals_for_today_lbl" />
+
+    <TextView
+        android:id="@+id/value_proteins_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/proteins_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_kcals_for_today"
+        app:layout_constraintBottom_toTopOf="@id/value_lipids_for_today"
+        tools:text="2345" />
+
+
+    <!--lipids-->
+    <TextView
+        android:id="@+id/lipids_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lipids plan :"
+
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/carbohydrates_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_lipids"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proteins_lbl" />
+
+    <TextView
+        android:id="@+id/value_lipids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70 g"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/lipids_lbl"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/value_proteins"
+        app:layout_constraintBottom_toTopOf="@id/value_carbohydrates"
+        tools:text="2345" />
+
+
+    <TextView
+        android:id="@+id/lipids_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lipids :"
+        android:textSize="17dp"
+
+        app:layout_constraintBottom_toTopOf="@id/carbohydrates_for_today_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_lipids_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/proteins_for_today_lbl" />
+
+    <TextView
+        android:id="@+id/value_lipids_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/lipids_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_proteins_for_today"
+        app:layout_constraintBottom_toTopOf="@id/value_carbohydrates_for_today"
+        tools:text="2345" />
+
+
+    <!--carbo-->
+    <TextView
+        android:id="@+id/carbohydrates_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbo plan :"
+
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/fiber_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_carbohydrates"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lipids_lbl" />
+
+    <TextView
+        android:id="@+id/value_carbohydrates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="310 g"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/carbohydrates_lbl"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/value_lipids"
+        app:layout_constraintBottom_toTopOf="@id/value_fiber"
+
+        tools:text="2345" />
+
+
+    <TextView
+        android:id="@+id/carbohydrates_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbo :"
+        android:textSize="17dp"
+
+        app:layout_constraintBottom_toTopOf="@id/fiber_for_today_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_carbohydrates_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/lipids_for_today_lbl" />
+
+    <TextView
+        android:id="@+id/value_carbohydrates_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        tools:text="2345"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/carbohydrates_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_lipids_for_today"
+        app:layout_constraintBottom_toTopOf="@id/value_fiber_for_today"
+        />
+
+    <!--fiber-->
+    <TextView
+        android:id="@+id/fiber_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiber plan :"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/sugar_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_fiber"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates_lbl" />
+
+    <TextView
+        android:id="@+id/value_fiber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 g"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/fiber_lbl"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/value_carbohydrates"
+        app:layout_constraintBottom_toTopOf="@id/value_sugar"
+        tools:text="2345" />
+
+    <TextView
+        android:id="@+id/fiber_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiber :"
+        android:textSize="17dp"
+
+        app:layout_constraintBottom_toTopOf="@id/sugar_for_today_lbl"
+        app:layout_constraintEnd_toStartOf="@id/value_fiber_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates_for_today_lbl" />
+
+    <TextView
+        android:id="@+id/value_fiber_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/fiber_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_carbohydrates_for_today"
+        app:layout_constraintBottom_toTopOf="@id/value_sugar_for_today"
+        tools:text="2345" />
+
+    <!--sugar-->
+    <TextView
+        android:id="@+id/sugar_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar plan :"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@id/value_sugar"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fiber_lbl" />
+
+    <TextView
+        android:id="@+id/value_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="90 g"
+        android:textSize="17dp"
+        app:layout_constraintStart_toEndOf="@id/sugar_lbl"
+        app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+        app:layout_constraintTop_toBottomOf="@id/value_fiber"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        tools:text="2345" />
+
+
+    <TextView
+        android:id="@+id/sugar_for_today_lbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar :"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@id/value_sugar_for_today"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+
+        app:layout_constraintTop_toBottomOf="@id/fiber_for_today_lbl" />
+
+    <TextView
+        android:id="@+id/value_sugar_for_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        tools:text="2345"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@id/sugar_for_today_lbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/value_fiber_for_today"
+        app:layout_constraintBottom_toTopOf="@id/recyclerView"
+        />
+
+
+    <!--RecyclerView-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/emptyLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontal_guideline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        app:fabSize="normal"
+        android:clickable="true"
+        android:src="@drawable/ic_add_black_24dp"
+        app:rippleColor="@color/rippleColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
